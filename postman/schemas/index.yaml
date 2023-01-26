@@ -1,0 +1,28 @@
+openapi: "3.0.3"
+
+info:
+    title: "Mocking and Testing"
+    version: "1.0.1"
+servers:
+    - url: /mockandtesting/v1
+paths:
+    /test:
+        get:
+            summary: "simple get"
+            responses:
+                200:
+                    description: OK
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    data:
+                                        type: array
+                                        items:
+                                            type: object
+                                            properties:
+                                                id:
+                                                    type: string
+                                                name:
+                                                    type: string
